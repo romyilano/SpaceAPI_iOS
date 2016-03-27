@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A683E2CE5CC341643683187 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7BB614B88BAE7B2E639C37 /* libPods.a */; };
 		EC6E08B91CA8925000DA429E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08B81CA8925000DA429E /* main.m */; };
 		EC6E08BC1CA8925000DA429E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08BB1CA8925000DA429E /* AppDelegate.m */; };
 		EC6E08BF1CA8925000DA429E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08BE1CA8925000DA429E /* ViewController.m */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D029672886C691EB3CA4169 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7F7BB614B88BAE7B2E639C37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD8A7A12CAC092BE5B2E049E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EC6E08B41CA8925000DA429E /* SpaceAPI_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceAPI_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6E08B81CA8925000DA429E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC6E08BA1CA8925000DA429E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A683E2CE5CC341643683187 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121A82663B9B81E3A82A39DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD8A7A12CAC092BE5B2E049E /* Pods.debug.xcconfig */,
+				3D029672886C691EB3CA4169 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83FDE833BB098CC161D9B5E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F7BB614B88BAE7B2E639C37 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC6E08AB1CA8925000DA429E = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,8 @@
 				EC6E08D01CA8925100DA429E /* SpaceAPI_iOSTests */,
 				EC6E08DB1CA8925100DA429E /* SpaceAPI_iOSUITests */,
 				EC6E08B51CA8925000DA429E /* Products */,
+				121A82663B9B81E3A82A39DF /* Pods */,
+				83FDE833BB098CC161D9B5E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC6E08E11CA8925100DA429E /* Build configuration list for PBXNativeTarget "SpaceAPI_iOS" */;
 			buildPhases = (
+				D8CDD33997574E46F3B87F58 /* Check Pods Manifest.lock */,
 				EC6E08B01CA8925000DA429E /* Sources */,
 				EC6E08B11CA8925000DA429E /* Frameworks */,
 				EC6E08B21CA8925000DA429E /* Resources */,
+				9DA979F65A911B7C0F9E88FE /* Embed Pods Frameworks */,
+				10E077EDFAA73092EB71B34E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10E077EDFAA73092EB71B34E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA979F65A911B7C0F9E88FE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8CDD33997574E46F3B87F58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC6E08B01CA8925000DA429E /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		EC6E08E21CA8925100DA429E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8A7A12CAC092BE5B2E049E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceAPI_iOS/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		EC6E08E31CA8925100DA429E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D029672886C691EB3CA4169 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpaceAPI_iOS/Info.plist;
@@ -500,6 +577,7 @@
 				EC6E08E31CA8925100DA429E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC6E08E41CA8925100DA429E /* Build configuration list for PBXNativeTarget "SpaceAPI_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +586,7 @@
 				EC6E08E61CA8925100DA429E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC6E08E71CA8925100DA429E /* Build configuration list for PBXNativeTarget "SpaceAPI_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +595,7 @@
 				EC6E08E91CA8925100DA429E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
