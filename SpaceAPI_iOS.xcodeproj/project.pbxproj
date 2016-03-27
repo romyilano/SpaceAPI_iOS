@@ -15,6 +15,7 @@
 		EC6E08C71CA8925100DA429E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6E08C51CA8925100DA429E /* LaunchScreen.storyboard */; };
 		EC6E08D21CA8925100DA429E /* SpaceAPI_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08D11CA8925100DA429E /* SpaceAPI_iOSTests.m */; };
 		EC6E08DD1CA8925100DA429E /* SpaceAPI_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08DC1CA8925100DA429E /* SpaceAPI_iOSUITests.m */; };
+		EC6E08EB1CA892AB00DA429E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EC6E08EA1CA892AB00DA429E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EC6E08D81CA8925100DA429E /* SpaceAPI_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceAPI_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6E08DC1CA8925100DA429E /* SpaceAPI_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceAPI_iOSUITests.m; sourceTree = "<group>"; };
 		EC6E08DE1CA8925100DA429E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6E08EA1CA892AB00DA429E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		EC6E08AB1CA8925000DA429E = {
 			isa = PBXGroup;
 			children = (
+				EC6E08EA1CA892AB00DA429E /* README.md */,
 				EC6E08B61CA8925000DA429E /* SpaceAPI_iOS */,
 				EC6E08D01CA8925100DA429E /* SpaceAPI_iOSTests */,
 				EC6E08DB1CA8925100DA429E /* SpaceAPI_iOSUITests */,
@@ -272,6 +275,7 @@
 			files = (
 				EC6E08BF1CA8925000DA429E /* ViewController.m in Sources */,
 				EC6E08BC1CA8925000DA429E /* AppDelegate.m in Sources */,
+				EC6E08EB1CA892AB00DA429E /* README.md in Sources */,
 				EC6E08B91CA8925000DA429E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
